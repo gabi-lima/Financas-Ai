@@ -1,0 +1,36 @@
+header {
+    font-size:1em;
+    text-align: center;
+    height: 10px;
+    width: 90%;
+    border: 3px;
+    justify-content: center;
+    margin: 0 auto;
+}
+#gastos {
+    margin-top: 50px;
+    height: 200px;
+    background-color: black;
+}
+#inputGastos{
+    height: 40px;
+    justify-content: center;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#botãoInput1{
+    text-align: center;
+    justify-content: center;
+}
+#inputGanhos{
+    height: 40px;
+    justify-content: center;
+    margin: 10px auto;
+    text-align: center;
+}
+#ganhos {
+    margin-top: 50px;
+    height: 200px;
+    background-color: black;
+}
