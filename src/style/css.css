@@ -10,7 +10,7 @@ header {
 #gastos {
     margin-top: 50px;
     height: 200px;
-    background-color: black;
+    background-color: blue;
 }
 #inputGastos{
     height: 40px;
@@ -19,7 +19,7 @@ header {
     text-align: center;
 }
 
-#botãoInput1{
+.botãoInput1{
     text-align: center;
     justify-content: center;
 }

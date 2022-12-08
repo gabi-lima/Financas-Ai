@@ -14,16 +14,20 @@
         <h1>Finanças Aí</h1>
     </header>
     <!-- Div para listar os valores das dívidas/gastos -->
-    <div id="gastos"></div>
+    <div id="gastos">
+        <ul id="listaGastos">
+            
+        </ul>
+    </div>
     <!-- Div com finalidade de adicionar as dívidas/gastos-->
-    <div id="inputGastos"> 
-        <input type="text" name="nomeGastos" id="botãoInput1" placeholder="Nome da Dívida"><br><br>
-        <input type="text" name="valorGastos" id="botãoInput1" placeholder ="Valor"><br><br>
-        <input type="button" value="Adicionar"><br><br>
+    <div id="inputGastos">
+        <input type="text" name="nomeGastos" id ="nomeGastos" class="botãoInput1" placeholder="Nome da Dívida"><br><br>
+        <input type="text" name="valorGastos" id="valorGastos" class="botãoInput1" placeholder ="Valor"><br><br>
+        <input type="button" value="Adicionar" onclick="adicionarGastos()"><br><br>
     <div id="ganhos"></div>
     <div id="inputGanhos">
-        <input type="text" name="nomeGanho" id="botãoInput1" placeholder="Nome do Faturamento"><br><br>
-        <input type="text" name="valorGanho" id="botãoInput1" placeholder="Valor Recebido"><br><br>
+        <input type="text" name="nomeGanho" id="nomeGanho" class="botãoInput1" placeholder="Nome do Faturamento"><br><br>
+        <input type="text" name="valorGanho" id="valorGanho" class="botãoInput1" placeholder="Valor Recebido"><br><br>
         <input type="button" value="Adicionar"><br><br>
     </div>
 </div>
