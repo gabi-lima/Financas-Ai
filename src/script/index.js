@@ -1,7 +1,12 @@
 function adicionarGastos(){
-    var nomegastos = document.getElementById('nomeGastos').value
-    el = document.createElement('li');
-    el.innerHTML = nomegastos;
-    document.getElementById('listaGastos').appendChild(el);
-    console.log(nomegastos)
+    var nomeGastos = document.getElementById('nomeGastos').value
+    var valorGastos = document.getElementById('valorGastos').value
+    
+    addLista = document.createElement('li');
+    addLista.innerHTML = nomeGastos + '   :   ' + valorGastos;
+
+    document.getElementById('listaGastos').appendChild(addLista);
+    console.log(nomeGastos)
+    
+    console.log(valorGastos)
 }
