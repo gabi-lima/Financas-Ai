@@ -10,7 +10,7 @@ header {
 #gastos {
     margin-top: 50px;
     height: 200px;
-    background-color: blue;
+    background-color: red;
     overflow:auto;
 }
 #inputGastos{
@@ -18,6 +18,17 @@ header {
     justify-content: center;
     margin: 10px auto;
     text-align: center;
+}
+
+#totalGastos{
+    background-color: red;
+    width: 60%;
+    height: 50px;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    font-size: 1.2em;
 }
 
 .botãoInput1{
@@ -31,9 +42,30 @@ header {
     text-align: center;
 }
 #ganhos {
-    margin-top: 50px;
+    margin-top: 137px;
     height: 200px;
-    background-color: red;
+    background-color: green;
     overflow: auto;
     text-align: justify;
+}
+#totalGanhos{
+    background-color: green;
+    width: 60%;
+    height: 50px;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    font-size: 1.2em;
+}
+#totalLiq{
+    background-color: blue;
+    width: 60%;
+    height: 50px;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    margin: 130px auto;
+    font-size: 1.2em;
+
 }
