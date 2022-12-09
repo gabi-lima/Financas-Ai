@@ -22,13 +22,20 @@
     <!-- Div com finalidade de adicionar as dívidas/gastos-->
     <div id="inputGastos">
         <input type="text" name="nomeGastos" id ="nomeGastos" class="botãoInput1" placeholder="Nome da Dívida"><br><br>
-        <input type="number" name="valorGastos" id="valorGastos" class="botãoInput1" placeholder ="Valor"><br><br>
+        <input type="number" name="valorGastos" id="valorGastos" class="botãoInput1" placeholder ="Valor Gasto"><br><br>
         <input type="button" value="Adicionar" onclick="adicionarGastos()"><br><br>
-    <div id="ganhos"></div>
+     <!-- Div com finalidade de adicionar o dinheiro recebido-->
+
+    <div id="ganhos">
+        <ul id="listaGanhos">
+        
+        </ul>
+    </div>
+    
     <div id="inputGanhos">
         <input type="text" name="nomeGanho" id="nomeGanho" class="botãoInput1" placeholder="Nome do Faturamento"><br><br>
         <input type="number" name="valorGanho" id="valorGanho" class="botãoInput1" placeholder="Valor Recebido"><br><br>
-        <input type="button" value="Adicionar"><br><br>
+        <input type="button" value="Adicionar" onclick="adicionarRecebidos()"><br><br>
     </div>
 </div>
 </body>

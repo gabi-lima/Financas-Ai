@@ -33,6 +33,7 @@ header {
 #ganhos {
     margin-top: 50px;
     height: 200px;
-    background-color: black;
+    background-color: red;
     overflow: auto;
+    text-align: justify;
 }
