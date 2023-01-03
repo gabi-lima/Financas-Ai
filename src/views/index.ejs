@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/css/css.css" />
+    <script src="/js/index.js"></script>
+    <title>Finanças Ai</title>
+  </head>
+  <body>
+    <header>
+      <h1>Finanças Aí</h1>
+    </header>
+    <!-- Div para listar os valores das dívidas/gastos -->
+    <div id="gastos">
+      <ul id="listaGastos"></ul>
+    </div>
+
+    <div id="inputGastos">
+      <input
+        type="text"
+        name="nomeGastos"
+        id="nomeGastos"
+        class="botãoInput1"
+        placeholder="Nome da Dívida"
+      /><br /><br />
+      <input type="number" name="valorGastos" id="valorGastos"
+      class="botãoInput1" placeholder ="Valor Gasto""><br /><br />
+      <input
+        type="button"
+        value="Adicionar"
+        onclick="adicionarGastos();totalLiquido()"
+      /><br /><br />
+
+      <div id="totalGastos">Total de gastos:</div>
+    </div>
+    <!-- Div com finalidade de adicionar o dinheiro recebido-->
+
+    <div id="ganhos">
+      <ul id="listaGanhos"></ul>
+    </div>
+
+    <div id="inputGanhos">
+      <input
+        type="text"
+        name="nomeGanho"
+        id="nomeGanho"
+        class="botãoInput1"
+        placeholder="Nome do Faturamento"
+      /><br /><br />
+      <input
+        type="number"
+        name="valorGanho"
+        id="valorGanho"
+        class="botãoInput1"
+        placeholder="Valor Recebido"
+        oninput="totalLiquido()"
+      /><br /><br />
+      <input
+        type="button"
+        value="Adicionar"
+        onclick="adicionarRecebidos();totalLiquido()"
+      />
+      <br /><br />
+
+      <div id="totalGanhos">Total de Ganhos:</div>
+    </div>
+    <div id="totalLiq">Total Líquido:</div>
+  </body>
+</html>
