@@ -1,71 +1,34 @@
-header {
-    font-size:1em;
-    text-align: center;
-    height: 10px;
-    width: 90%;
-    border: 3px;
-    justify-content: center;
-    margin: 0 auto;
+* {
+  padding: 0;
+  margin: 0;
 }
-#gastos {
-    margin-top: 50px;
-    height: 200px;
-    background-color: red;
-    overflow:auto;
-}
-#inputGastos{
-    height: 40px;
-    justify-content: center;
-    margin: 10px auto;
-    text-align: center;
+.main-header {
+  font-family: "Comfortaa", cursive;
+  background-color: #183865;
+  background: linear-gradient(90deg, #000000 0%, #000220 10%, #183865 100%);
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  font-size: 40px;
 }
 
-#totalGastos{
-    background-color: red;
-    width: 60%;
-    height: 50px;
-    text-align: center;
-    justify-content:center;
-    align-items: center;
-    margin: auto;
-    font-size: 1.2em;
+.logo {
+  position: relative;
+  padding: 0 32%;
+  float: right;
+  cursor: pointer;
 }
 
-.botãoInput1{
-    text-align: center;
-    justify-content: center;
+#side-menu-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
 }
-#inputGanhos{
-    height: 40px;
-    justify-content: center;
-    margin: 10px auto;
-    text-align: center;
-}
-#ganhos {
-    margin-top: 137px;
-    height: 200px;
-    background-color: green;
-    overflow: auto;
-    text-align: justify;
-}
-#totalGanhos{
-    background-color: green;
-    width: 60%;
-    height: 50px;
-    text-align: center;
-    justify-content:center;
-    align-items: center;
-    margin: auto;
-    font-size: 1.2em;
-}
-#totalLiq{
-    background-color: blue;
-    width: 60%;
-    height: 50px;
-    text-align: center;
-    justify-content:center;
-    align-items: center;
-    margin: 130px auto;
-    font-size: 1.2em;
-
+#side-menu-toggle:active {
+  font-size: 30px;
 }

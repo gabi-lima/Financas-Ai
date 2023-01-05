@@ -1,71 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/css.css" />
-    <script src="/js/index.js"></script>
-    <title>Finanças Ai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>Finanças Aí</title>
   </head>
   <body>
-    <header>
-      <h1>Finanças Aí</h1>
+    <header class="main-header">
+      <button id="side-menu-toggle">
+        <span class="material-symbols-outlined"> menu </span>
+      </button>
+      <span class="logo">F.ai</span>
     </header>
-    <!-- Div para listar os valores das dívidas/gastos -->
-    <div id="gastos">
-      <ul id="listaGastos"></ul>
-    </div>
-
-    <div id="inputGastos">
-      <input
-        type="text"
-        name="nomeGastos"
-        id="nomeGastos"
-        class="botãoInput1"
-        placeholder="Nome da Dívida"
-      /><br /><br />
-      <input type="number" name="valorGastos" id="valorGastos"
-      class="botãoInput1" placeholder ="Valor Gasto""><br /><br />
-      <input
-        type="button"
-        value="Adicionar"
-        onclick="adicionarGastos();totalLiquido()"
-      /><br /><br />
-
-      <div id="totalGastos">Total de gastos:</div>
-    </div>
-    <!-- Div com finalidade de adicionar o dinheiro recebido-->
-
-    <div id="ganhos">
-      <ul id="listaGanhos"></ul>
-    </div>
-
-    <div id="inputGanhos">
-      <input
-        type="text"
-        name="nomeGanho"
-        id="nomeGanho"
-        class="botãoInput1"
-        placeholder="Nome do Faturamento"
-      /><br /><br />
-      <input
-        type="number"
-        name="valorGanho"
-        id="valorGanho"
-        class="botãoInput1"
-        placeholder="Valor Recebido"
-        oninput="totalLiquido()"
-      /><br /><br />
-      <input
-        type="button"
-        value="Adicionar"
-        onclick="adicionarRecebidos();totalLiquido()"
-      />
-      <br /><br />
-
-      <div id="totalGanhos">Total de Ganhos:</div>
-    </div>
-    <div id="totalLiq">Total Líquido:</div>
   </body>
 </html>
