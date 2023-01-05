@@ -32,3 +32,24 @@
 #side-menu-toggle:active {
   font-size: 30px;
 }
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+#menu {
+  position: absolute;
+  font-size: 2rem;
+  top: 15rem;
+  line-height: 150px;
+  left: 32%;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+#nav.active #menu {
+  display: flex;
+  list-style: none;
+}
