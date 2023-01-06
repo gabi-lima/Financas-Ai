@@ -1,0 +1,68 @@
+.main_index {
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Comfortaa", cursive;
+}
+
+.main_card {
+  margin-top: 20px;
+  width: 70%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  box-shadow: 5px 5px 5px 5px rgba(4, 25, 77, 0.277);
+  border-radius: 10px;
+}
+div.main_card h1 {
+  font-size: 50px;
+}
+
+#login {
+  width: 40%;
+  height: 10%;
+  box-shadow: 1px 5px 1px 0px rgba(4, 25, 77, 0.277);
+  transition-timing-function: ease;
+  transition-duration: 1s;
+  margin-left: 10px;
+}
+
+#login:hover {
+  box-shadow: 1px 2px 1px 0px rgba(4, 25, 77, 0.277);
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.card_app {
+  margin-top: 20px;
+  width: 70%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  box-shadow: 5px 5px 5px 5px rgba(4, 25, 77, 0.277);
+  border-radius: 10px;
+}
+
+.form_login {
+  margin-top: 20px;
+  display: flex;
+  flex-basis: 20%;
+}
+.form_login input {
+  width: 70px;
+  border-radius: 8px;
+  border-width: thin;
+}
