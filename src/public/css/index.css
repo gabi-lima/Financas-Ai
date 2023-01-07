@@ -1,3 +1,20 @@
+html {
+  height: 100%;
+}
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .main_index {
   margin-top: 30px;
   width: 100%;
@@ -10,32 +27,35 @@
 }
 
 .main_card {
+  animation-delay: 2s;
   margin-top: 20px;
-  width: 70%;
+  width: 90%;
   height: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-
-  box-shadow: 5px 5px 5px 5px rgba(4, 25, 77, 0.277);
-  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(4, 25, 77, 0.172);
+  border-radius: 33px;
 }
-div.main_card h1 {
-  font-size: 50px;
+div.main_card h2 {
+  color: white;
+  font-size: 25px;
 }
 
 #login {
-  width: 40%;
+  width: 35%;
   height: 10%;
   box-shadow: 1px 5px 1px 0px rgba(4, 25, 77, 0.277);
   transition-timing-function: ease;
-  transition-duration: 1s;
-  margin-left: 10px;
+  transition-duration: 0.5s;
+  margin-left: 1%;
+  background-color: white;
 }
 
 #login:hover {
   box-shadow: 1px 2px 1px 0px rgba(4, 25, 77, 0.277);
+  background-color: rgba(20, 77, 220, 0.622);
 }
 
 .break {
@@ -44,25 +64,14 @@ div.main_card h1 {
 }
 
 .card_app {
+  background-color: white;
   margin-top: 20px;
-  width: 70%;
-  height: 60%;
+  width: 80%;
+  padding: 10px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
   font-family: "Comfortaa", cursive;
   box-shadow: 5px 5px 5px 5px rgba(4, 25, 77, 0.277);
   border-radius: 10px;
-}
-
-.form_login {
-  margin-top: 20px;
-  display: flex;
-  flex-basis: 20%;
-}
-.form_login input {
-  width: 70px;
-  border-radius: 8px;
-  border-width: thin;
+  font-size: 15px;
 }
