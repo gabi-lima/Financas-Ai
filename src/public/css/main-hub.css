@@ -1,0 +1,25 @@
+h1 {
+  width: 80%;
+  margin-top: 30px;
+  font-family: "Comfortaa", cursive;
+  color: white;
+  margin-left: 3%;
+}
+#finance_table {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 95%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+#finance_table td,
+th {
+  font-family: "Comfortaa", cursive;
+
+  padding: 10px;
+  border-style: solid;
+}

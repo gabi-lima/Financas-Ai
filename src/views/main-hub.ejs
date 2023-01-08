@@ -1,6 +1,25 @@
 <%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="/css/main-hub.css">
   </head>
   <body>
     <%- include('../includes/nav.ejs')%>
+   <h1> Olá, <b>Usuário</b>. <br>
+    Aqui você pode ver suas finanças:
+   </h1>
+    <button class="btn_add"><h2>Adicionar gastos</h2></button>
+    <table id="finance_table">
+      <tr>
+        <th>Nome</th>
+        <th>Valor</th>
+        <th>Data</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Teste</td>
+        <td>535</td>
+        <td>23/03/2003</td>
+        <td>Pago</td>
+      </tr>
+    </table>
   </body>
 </html>

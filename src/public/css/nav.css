@@ -2,9 +2,13 @@
   padding: 0;
   margin: 0;
 }
+html {
+  height: 100%;
+}
 body {
   background-image: linear-gradient(#152238 10%, #000000 90%);
 }
+
 .main-header {
   font-family: "Comfortaa", cursive;
   width: 100%;
@@ -24,6 +28,10 @@ body {
   float: right;
   cursor: pointer;
 }
+.logo a {
+  text-decoration: none;
+  color: white;
+}
 
 #side-menu-toggle {
   background-color: transparent;
@@ -39,9 +47,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-a {
+.logo a {
   text-decoration: none;
-  color: #000220;
+  color: white;
 }
 
 #menu {
@@ -56,6 +64,7 @@ a {
   align-items: center;
   justify-content: center;
   display: none;
+  list-style: none;
 }
 
 #nav.active #menu {
