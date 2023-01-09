@@ -1,7 +1,10 @@
+body {
+  font-family: "Comfortaa", cursive;
+}
 h1 {
   width: 80%;
   margin-top: 30px;
-  font-family: "Comfortaa", cursive;
+
   color: white;
   margin-left: 3%;
 }
@@ -18,8 +21,63 @@ h1 {
 }
 #finance_table td,
 th {
-  font-family: "Comfortaa", cursive;
-
   padding: 10px;
   border-style: solid;
+}
+
+.btn_add {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.btn {
+  color: white;
+  width: 40%;
+  font-family: "Comfortaa", cursive;
+  background-color: rgb(168, 7, 7);
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 3px #0c131fb9;
+  transition: ease 0.3s;
+}
+
+.btn:first-child {
+  margin-right: 20px;
+}
+.btn:nth-of-type(2) {
+  background-color: green;
+}
+
+.btn:hover {
+  width: 35%;
+  box-shadow: 1px 0px 1px 0px #0c131fb9;
+}
+.form_popup {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width: 30%;
+  line-height: 40px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.form .btn {
+  margin-top: 20px;
+  width: 80%;
+  font-size: 22px;
+}
+
+.form input {
+  border-radius: 5px;
+  width: 70%;
+  font-size: 18px;
+  text-align: center;
 }

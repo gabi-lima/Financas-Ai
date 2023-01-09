@@ -1,12 +1,42 @@
 <%- include('../includes/head.ejs') %>
 <link rel="stylesheet" href="/css/main-hub.css">
+<script src="/js/main-hub.js"></script>
   </head>
   <body>
     <%- include('../includes/nav.ejs')%>
    <h1> Olá, <b>Usuário</b>. <br>
     Aqui você pode ver suas finanças:
    </h1>
-    <button class="btn_add"><h2>Adicionar gastos</h2></button>
+   <div class="btn_add">
+    <button class="btn" id="btn_gastos" onclick="popupGastos()"><h2>Adicionar gastos</h2></button>
+    <button class="btn" onclick="popupGanhos()"><h2>Adicionar ganhos</h2></button>
+  </div>
+  <div class="form_popup" style="display: none;">
+    <form action="/add_gasto" method="post" class="form">
+      <label for="nome_gasto">Nome:</label>
+      <input type="text" name="nome_gasto" id="">
+      <label for="valor_gasto">Valor:</label>
+      <input type="number" name="valor_gasto" id="">
+      <label for="data_gasto">Data:</label>
+      <input type="date" name="data_gasto" id="">
+      <label for="status_gasto" class="select_gastos">Status:</label>
+      <select name="status_gasto" class="select_gastos">
+        <option value="Aberto">Em aberto</option>
+        <option value="Vencido">Vencido</option>
+        <option value="Pago">Pago</option>
+      </select>
+      <label for="origem_ganho" class="select_ganhos">Origem:</label>
+      <select name="origem_ganho" class="select_ganhos">
+        <option value="Salário">Salário</option>
+        <option value="Extra">Hora extra</option>
+        <option value="Investimentos">Investimentos</option>
+      </select>
+      <button class="btn" type="reset" onclick="fecharPopup()"> Voltar</button>
+      <button type="submit" class="btn">Enviar </button>
+
+    </form>
+  </div>
+    
     <table id="finance_table">
       <tr>
         <th>Nome</th>
