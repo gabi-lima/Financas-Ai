@@ -12,9 +12,9 @@
     <button class="btn" onclick="popupGanhos()"><h2>Adicionar ganhos</h2></button>
   </div>
   <div class="form_popup" style="display: none;">
-    <form action="/add_gasto" method="post" class="form">
+    <form action="/add_gasto" method="POST" class="form">
       <label for="nome_gasto">Nome:</label>
-      <input type="text" name="nome_gasto" id="">
+      <input type="text" name="nome_gasto" id="nome_gasto">
       <label for="valor_gasto">Valor:</label>
       <input type="number" name="valor_gasto" id="">
       <label for="data_gasto">Data:</label>
@@ -32,7 +32,7 @@
         <option value="Investimentos">Investimentos</option>
       </select>
       <button class="btn" type="reset" onclick="fecharPopup()"> Voltar</button>
-      <button type="submit" class="btn">Enviar </button>
+      <button type="submit" class="btn">Add </button>
 
     </form>
   </div>
