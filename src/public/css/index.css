@@ -32,7 +32,6 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  box-shadow: 5px 5px 5px 5px rgba(4, 25, 77, 0.172);
   border-radius: 33px;
 }
 div.main_card h2 {
@@ -43,7 +42,7 @@ div.main_card h2 {
 #login {
   width: 35%;
   height: 10%;
-  box-shadow: 1px 5px 1px 0px rgba(4, 25, 77, 0.277);
+  box-shadow: 1px 5px 1px 0px rgba(0, 0, 0, 0.277);
   transition-timing-function: ease;
   transition-duration: 0.5s;
   margin-left: 1%;
@@ -68,7 +67,7 @@ div.main_card h2 {
   display: flex;
   justify-content: center;
   font-family: "Comfortaa", cursive;
-  box-shadow: 5px 5px 5px 5px rgba(4, 25, 77, 0.277);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.277);
   border-radius: 10px;
   font-size: 15px;
 }

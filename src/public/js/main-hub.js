@@ -11,7 +11,7 @@ function popupGastos() {
   document.getElementsByClassName("form_popup")[0].style.display = "flex";
 
   var form = document.querySelector(".form");
-  form.action = "/add_gasto";
+  form.action = "financas/add_gasto";
 }
 
 function popupGanhos() {
@@ -27,7 +27,7 @@ function popupGanhos() {
   document.getElementsByClassName("form_popup")[0].style.display = "flex";
 
   var form = document.querySelector(".form");
-  form.action = "/add_ganho";
+  form.action = "financas/add_ganho";
 }
 
 function fecharPopup() {

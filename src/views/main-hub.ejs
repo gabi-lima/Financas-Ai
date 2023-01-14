@@ -13,20 +13,20 @@
   </div>
   <div class="form_popup" style="display: none;">
     <form action="/add_gasto" method="POST" class="form">
-      <label for="nome_gasto">Nome:</label>
-      <input type="text" name="nome_gasto" id="nome_gasto">
-      <label for="valor_gasto">Valor:</label>
-      <input type="number" name="valor_gasto" id="">
-      <label for="data_gasto">Data:</label>
-      <input type="date" name="data_gasto" id="">
-      <label for="status_gasto" class="select_gastos">Status:</label>
-      <select name="status_gasto" class="select_gastos">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome">
+      <label for="valor">Valor:</label>
+      <input type="number" name="valor" id="">
+      <label for="data">Data:</label>
+      <input type="date" name="data" id="">
+      <label for="status" class="select_gastos">Status:</label>
+      <select name="status" class="select_gastos">
         <option value="Aberto">Em aberto</option>
         <option value="Vencido">Vencido</option>
         <option value="Pago">Pago</option>
       </select>
-      <label for="origem_ganho" class="select_ganhos">Origem:</label>
-      <select name="origem_ganho" class="select_ganhos">
+      <label for="origem" class="select_ganhos">Origem:</label>
+      <select name="origem" class="select_ganhos">
         <option value="Salário">Salário</option>
         <option value="Extra">Hora extra</option>
         <option value="Investimentos">Investimentos</option>
@@ -44,12 +44,14 @@
         <th>Data</th>
         <th>Status</th>
       </tr>
+      <% for (let gastos of tabelaGastos) { %>
       <tr>
-        <td>Teste</td>
-        <td>535</td>
-        <td>23/03/2003</td>
-        <td>Pago</td>
+        <td><%- gastos.nome %></td>
+        <td><%= gastos.valor %></td>
+        <td><%= gastos.data %></td>
+        <td><%= gastos.status %></td>
       </tr>
+      <% } %>
     </table>
   </body>
 </html>

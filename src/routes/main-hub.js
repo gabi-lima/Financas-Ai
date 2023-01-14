@@ -4,8 +4,12 @@ const tabelaGasto = [];
 const tabelaGanho = [];
 
 router.get("/", (req, res, next) => {
-  res.render("main-hub");
+  res.render("main-hub", {
+    tabelaGastos: tabelaGasto,
+    tabelaGanhos: tabelaGanho,
+  });
 });
+
 router.post("/add_gasto", (req, res, next) => {
   tabelaGasto.push({
     nome: req.body.nome,
@@ -13,7 +17,7 @@ router.post("/add_gasto", (req, res, next) => {
     data: req.body.data,
     status: req.body.status,
   });
-  console.log(tabelaGasto);
+  console.log("gastos: ", tabelaGasto);
   res.redirect("/financas");
 });
 
@@ -24,7 +28,7 @@ router.post("/add_ganho", (req, res, next) => {
     data: req.body.data,
     origem: req.body.origem,
   });
-  console.log("1", tabelaGanho, tabelaGasto);
+  console.log("ganhos", tabelaGanho, "gastos", tabelaGasto);
   res.redirect("/financas");
 });
 module.exports = router;
